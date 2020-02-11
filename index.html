@@ -1,0 +1,1191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Buupass Flight booking </title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/lineicons.css"/>
+    <link rel="stylesheet" href="css/weather-icons.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav">
+      <div class="container">
+        <div class="navbar-inner nav">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target="#navbar-main" data-toggle="collapse" type="button" area-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Image Alternative text" title="Image Title"/>
+            </a>
+          </div>
+          <!---menu comes here-->
+          <ul class="nav navbar-nav">
+            <li class="active dropdown">
+              <a href="index.html" >Home</a>
+              </li>
+              </ul>
+
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="about-us.html">About us</a>
+                  </li>
+                  </ul>
+                  
+
+                <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="flight-index-3.html" >Flight tickets</a>
+                  </li>
+                  </ul>
+
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="contact.html" >Contact us</a>
+                      </li>
+                      </ul>                            
+                                
+                       
+                 
+          <!--menu ends here-->
+
+          <!--menu to the right-->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="_desk-h">Currency</span>
+                  <b>USD</b>
+                </a>
+                <div class="dropdown-menu dropdown-menu-xxl">
+                  <h5 class="dropdown-meganav-select-list-title">Popular Currencies</h5>
+                  <div class="row" data-gutter="10">
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>€</span>Euro
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>£</span>Pound sterling
+                          </a>
+                        </li>
+                        <li class="active">
+                          <a href="#">
+                            <span>US$</span>U.S. dollar
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>CAD</span>Canadian dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>AUD</span>Australian dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>RUB</span>Russian Ruble
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>S$</span>Singapore dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>CNY</span>Chinese yuan
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>¥</span>Japanese yen
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <hr/>
+                  <h5 class="dropdown-meganav-select-list-title">All Currencies</h5>
+                  <div class="row" data-gutter="10">
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>AR$</span>Argentine peso
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>AUD</span>Australian dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>AZN</span>Azerbaijan, New Ma...
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>BHD</span>Bahrain dinar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>BRL</span>Brazilian real
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>BGN</span>Bulgarian lev
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>CAD</span>Canadian dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>XOF</span>CFA Franc BCEAO
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>CL$</span>Chilean peso
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>CNY</span>Chinese yuan
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>COP</span>Colombian peso
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Kč</span>Czech koruna
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>DKK</span>Danish krone
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>EGP</span>Egyptian pound
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>€</span>Euro
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>FJD</span>Fijian dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>GEL</span>Georgian lari
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>HK$</span>Hong Kong Dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>HUF</span>Hungarian forint
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Rs.</span>Indian rupee
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Rp</span>Indonesian rupiah
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>₪</span>Israeli new sheqel
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>¥</span>Japanese yen
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>JOD</span>Jordanian dinar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>KZT</span>Kazakhstani tenge
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>KRW</span>Korean won
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>KWD</span>Kuwaiti dinar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>MYR</span>Malaysian ringgit
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>MXN</span>Mexican peso
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>MDL</span>Moldovan leu
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>NAD</span>Namibian Dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>TWD</span>New Taiwan Dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>NZD</span>New Zealand dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>NOK</span>Norwegian krone
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>OMR</span>Omani rial
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>zł</span>Polish zloty
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>£</span>Pound sterling
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>QAR</span>Qatar riyal
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>lei</span>Romanian new leu
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-currency">
+                        <li>
+                          <a href="#">
+                            <span>RUB</span>Russian Ruble
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>SAR</span>Saudi Arabian riyal
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>S$</span>Singapore dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>ZAR</span>South African rand
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>SEK</span>Swedish krona
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>CHF</span>Swiss franc
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>THB</span>Thai baht
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>TL</span>Turkish lira
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>AED</span>U.A.E. dirham
+                          </a>
+                        </li>
+                        <li class="active">
+                          <a href="#">
+                            <span>US$</span>U.S. dollar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>UAH</span>Ukraine Hryvnia
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>UZS</span>Uzbekistan, Sums
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="_desk-h">Language</span>
+                  <img class="navbar-flag" src="img/flags/USA.png" alt="Image Alternative text" title="Image Title"/>
+                </a>
+                <div class="dropdown-menu dropdown-menu-xxl">
+                  <h5 class="dropdown-meganav-select-list-title">Languages</h5>
+                  <div class="row" data-gutter="10">
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-lang">
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/UK.png" alt="Image Alternative text" title="Image Title"/>English(UK)
+                          </a>
+                        </li>
+                        <li class="active">
+                          <a href="#">
+                            <img src="img/flag_codes/US.png" alt="Image Alternative text" title="Image Title"/>English(US)
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/DE.png" alt="Image Alternative text" title="Image Title"/>Deutsch
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/NED.png" alt="Image Alternative text" title="Image Title"/>Nederlands
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/FR.png" alt="Image Alternative text" title="Image Title"/>Français
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SP.png" alt="Image Alternative text" title="Image Title"/>Español
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ARG.png" alt="Image Alternative text" title="Image Title"/>Español (AR)
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/IT.png" alt="Image Alternative text" title="Image Title"/>Italiano
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/PT.png" alt="Image Alternative text" title="Image Title"/>Português (PT)
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/BR.png" alt="Image Alternative text" title="Image Title"/>Português (BR)
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/NR.png" alt="Image Alternative text" title="Image Title"/>Norsk
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-lang">
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/FIN.png" alt="Image Alternative text" title="Image Title"/>Suomi
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SW.png" alt="Image Alternative text" title="Image Title"/>Svenska
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/DEN.png" alt="Image Alternative text" title="Image Title"/>Dansk
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/CZ.png" alt="Image Alternative text" title="Image Title"/>Čeština
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/HUN.png" alt="Image Alternative text" title="Image Title"/>Magyar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ROM.png" alt="Image Alternative text" title="Image Title"/>Română
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/JP.png" alt="Image Alternative text" title="Image Title"/>日本語
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/CN.png" alt="Image Alternative text" title="Image Title"/>简体中文
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/PL.png" alt="Image Alternative text" title="Image Title"/>Polski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/GR.png" alt="Image Alternative text" title="Image Title"/>Ελληνικά
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/RU.png" alt="Image Alternative text" title="Image Title"/>Русский
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-lang">
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/TUR.png" alt="Image Alternative text" title="Image Title"/>Türkçe
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/BUL.png" alt="Image Alternative text" title="Image Title"/>Български
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ARB.png" alt="Image Alternative text" title="Image Title"/>العربية
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/KOR.png" alt="Image Alternative text" title="Image Title"/>한국어
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ISR.png" alt="Image Alternative text" title="Image Title"/>עברית
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/LAT.png" alt="Image Alternative text" title="Image Title"/>Latviski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/UKR.png" alt="Image Alternative text" title="Image Title"/>Українська
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/IND.png" alt="Image Alternative text" title="Image Title"/>Bahasa Indonesia
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/MAL.png" alt="Image Alternative text" title="Image Title"/>Bahasa Malaysia
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/TAI.png" alt="Image Alternative text" title="Image Title"/>ภาษาไทย
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/EST.png" alt="Image Alternative text" title="Image Title"/>Eesti
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="dropdown-meganav-select-list-lang">
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/CRO.png" alt="Image Alternative text" title="Image Title"/>Hrvatski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/LIT.png" alt="Image Alternative text" title="Image Title"/>Lietuvių
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SLO.png" alt="Image Alternative text" title="Image Title"/>Slovenčina
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SERB.png" alt="Image Alternative text" title="Image Title"/>Srpski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SLOVE.png" alt="Image Alternative text" title="Image Title"/>Slovenščina
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/NAM.png" alt="Image Alternative text" title="Image Title"/>Tiếng Việt
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/PHI.png" alt="Image Alternative text" title="Image Title"/>Filipino
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ICE.png" alt="Image Alternative text" title="Image Title"/>Íslenska
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar-nav-item-user dropdown">
+                <a class="dropdown-toggle" href="account.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user-circle-o navbar-nav-item-user-icon"></i>My Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="account.html">Preferences</a>
+                  </li>
+                  <li>
+                    <a href="account-notifications.html">Notifications</a>
+                  </li>
+                  <li>
+                    <a href="account-cards.html">Payment Methods</a>
+                  </li>
+                  <li>
+                    <a href="account-travelers.html">Travelers</a>
+                  </li>
+                  <li>
+                    <a href="account-history.html">History</a>
+                  </li>
+                  <li>
+                    <a href="account-bookmarks.html">Bookmarks</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg" style="background-image:url(./img/home.png);"></div>
+        <div class="theme-hero-area-mask"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="theme-search-area _pt-150 _pb-100 _pv-mob-60 theme-search-area-stacked">
+                <div class="theme-search-area-header _c-w _ta-c">
+                  <h1 class="theme-search-area-title">Search for Flights</h1>
+                  <p class="theme-search-area-subtitle">Compare 200 flight providers at once</p>
+                </div>
+                <div class="theme-search-area-form" id="hero-search-form">
+                  <div class="row" data-gutter="none">
+                    <div class="col-md-5 ">
+                      <div class="row" data-gutter="none">
+                        <div class="col-md-6 ">
+                          <div class="theme-search-area-section first theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                              <input class="theme-search-area-section-input typeahead" type="text" placeholder="Departure" data-provide="typeahead"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="theme-search-area-section theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                              <input class="theme-search-area-section-input typeahead" type="text" placeholder="Arrival" data-provide="typeahead"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 ">
+                      <div class="row" data-gutter="none">
+                        <div class="col-md-4 ">
+                          <div class="theme-search-area-section theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                              <input class="theme-search-area-section-input datePickerStart _mob-h" value="Wed 06/27" type="text" placeholder="Check-in"/>
+                              <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-06-27" type="date"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 ">
+                          <div class="theme-search-area-section theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                              <input class="theme-search-area-section-input datePickerEnd _mob-h" value="Mon 07/02" type="text" placeholder="Check-out"/>
+                              <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-07-02" type="date"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 ">
+                          <div class="theme-search-area-section theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-curved quantity-selector" data-increment="Passengers">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-people"></i>
+                              <input class="theme-search-area-section-input" value="1 Passenger" type="text"/>
+                              <div class="quantity-selector-box" id="FlySearchPassengers">
+                                <div class="quantity-selector-inner">
+                                  <p class="quantity-selector-title">Passengers</p>
+                                  <ul class="quantity-selector-controls">
+                                    <li class="quantity-selector-decrement">
+                                      <a href="#">&#45;</a>
+                                    </li>
+                                    <li class="quantity-selector-current">1</li>
+                                    <li class="quantity-selector-increment">
+                                      <a href="#">&#43;</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1 ">
+                       <button class="theme-search-area-submit _mt-0 theme-search-area-submit-glow theme-search-area-submit-no-border theme-search-area-submit-curved" >Go!</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="theme-search-area-options theme-search-area-options-white theme-search-area-options-center theme-search-area-options-dot-primary-inverse clearfix">
+                  <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="flight-options" id="flight-option-1" checked/>Round Trip
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="flight-options" id="flight-option-2"/>One Way
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-page-section theme-page-section-xxl">
+      <div class="container">
+        <div class="theme-page-section-header">
+          <h5 class="theme-page-section-title">Today's Top Deals</h5>
+          <p class="theme-page-section-subtitle">Save your money with our best offers</p>
+        </div>
+        <div class="row row-col-mob-gap" data-gutter="10">
+          <div class="col-md-3 ">
+            <div class="banner _br-5 banner-animate banner-animate-mask-in banner-animate-zoom-in">
+              <img class="banner-img" src="./img/canada.png" alt="Image Alternative text" title="Image Title"/>
+              <div class="banner-mask"></div>
+              <a class="banner-link" href="#"></a>
+              <div class="banner-caption _ta-c _pb-20 _pt-60 banner-caption-bottom banner-caption-grad">
+                <h5 class="banner-title _fs">Flights to Canada</h5>
+                <p class="banner-subtitle _fw-n _mt-5">Rountrips from $129</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="banner _br-5 banner-animate banner-animate-mask-in banner-animate-zoom-in">
+              <img class="banner-img" src="./img/free.png" alt="Image Alternative text" title="Image Title"/>
+              <div class="banner-mask"></div>
+              <a class="banner-link" href="#"></a>
+              <div class="banner-caption _ta-c _pb-20 _pt-60 banner-caption-bottom banner-caption-grad">
+                <h5 class="banner-title _fs">Fly for Free</h5>
+                <p class="banner-subtitle _fw-n _mt-5">Earn free miles with rewards system</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="banner _br-5 banner-animate banner-animate-mask-in banner-animate-zoom-in">
+              <img class="banner-img" src="./img/first.png" alt="Image Alternative text" title="Image Title"/>
+              <div class="banner-mask"></div>
+              <a class="banner-link" href="#"></a>
+              <div class="banner-caption _ta-c _pb-20 _pt-60 banner-caption-bottom banner-caption-grad">
+                <h5 class="banner-title _fs">First Class Flights</h5>
+                <p class="banner-subtitle _fw-n _mt-5">Save up to 30%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="banner _br-5 banner-animate banner-animate-mask-in banner-animate-zoom-in">
+              <img class="banner-img" src="./img/last.png" alt="Image Alternative text" title="Image Title"/>
+              <div class="banner-mask"></div>
+              <a class="banner-link" href="#"></a>
+              <div class="banner-caption _ta-c _pb-20 _pt-60 banner-caption-bottom banner-caption-grad">
+                <h5 class="banner-title _fs">Last Minute Deals</h5>
+                <p class="banner-subtitle _fw-n _mt-5">Travel smart, travel cheap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg" style="background-image:url(./img/back.png);"></div>
+        <div class="theme-hero-area-mask"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="theme-page-section theme-page-section-xxl">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row row-col-mob-gap" data-gutter="60">
+                  <div class="col-md-4 ">
+                    <div class="feature feature-white feature-center">
+                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-line feature-icon-round fa fa-globe"></i>
+                      <div class="feature-caption _c-w">
+                        <h5 class="feature-title">Explore the World</h5>
+                        <p class="feature-subtitle">Start to discrover. We will help you to visit any place you can imagine</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 ">
+                    <div class="feature feature-white feature-center">
+                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-line feature-icon-round fa fa-gift"></i>
+                      <div class="feature-caption _c-w">
+                        <h5 class="feature-title">Gifts & Rewards</h5>
+                        <p class="feature-subtitle">Get even more from our service. Spend less and travel more</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 ">
+                    <div class="feature feature-white feature-center">
+                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-line feature-icon-round fa fa-credit-card"></i>
+                      <div class="feature-caption _c-w">
+                        <h5 class="feature-title">Best prices</h5>
+                        <p class="feature-subtitle">Contact us anytime, anywhere. We will resolve any issues ASAP</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-page-section theme-page-section-xxl theme-page-section-gray">
+      <div class="container">
+        <div class="theme-page-section-header">
+          <h5 class="theme-page-section-title">Travel Inspirations</h5>
+          <p class="theme-page-section-subtitle">Our latest travel tips, hacks and insights</p>
+        </div>
+        <div class="row row-col-gap" data-gutter="10">
+          <div class="col-md-3 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/india.png);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">day ago</p>
+                  <h5 class="theme-blog-item-title">Booking hotel in India</h5>
+                  <p class="theme-blog-item-desc">Stay in fancy hotels in India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/forest.png);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">3 days ago</p>
+                  <h5 class="theme-blog-item-title">Canada: forest trip</h5>
+                  <p class="theme-blog-item-desc">Awalk along the natural environment with a great breeze</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/solar.png);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">week ago</p>
+                  <h5 class="theme-blog-item-title">Total Solar Eclipse</h5>
+                  <p class="theme-blog-item-desc">Watching once in a lifetime solar eclipse</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/cabin.jpg);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">mounth ago</p>
+                  <h5 class="theme-blog-item-title">Mix up your cabin classes</h5>
+                  <p class="theme-blog-item-desc">Improve your skills and become a cabin crew with sponsered training</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/alaska.jpg);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">2 weeks ago</p>
+                  <h5 class="theme-blog-item-title">Alaska days</h5>
+                  <p class="theme-blog-item-desc">Lifestyle without limits in alaska</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="theme-blog-item _br-3 theme-blog-item-full">
+              <a class="theme-blog-item-link" href="blog-post.html"></a>
+              <div class="banner _h-45vh  banner-">
+                <div class="banner-bg" style="background-image:url(./img/hawaii.jpg);"></div>
+                <div class="banner-caption banner-caption-bottom banner-caption-grad">
+                  <p class="theme-blog-item-time">mounth ago</p>
+                  <h5 class="theme-blog-item-title">Hawaii lifestyle</h5>
+                  <p class="theme-blog-item-desc">Learn about beautiful lifestyle in hawaii</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg-pattern theme-hero-area-bg-pattern-ultra-light" style="background-image:url(img/patterns/travel/1.png);"></div>
+        <div class="theme-hero-area-grad-mask theme-hero-area-grad-mask-i"></div>
+        <div class="theme-hero-area-inner-shadow theme-hero-area-inner-shadow-light"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="container">
+          <div class="theme-page-section _p-0">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="theme-mobile-app">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="theme-mobile-app-section">
+                        <img class="theme-mobile-app-img" src="img/mockups/phone-1.png" alt="Image Alternative text" title="Image Title"/>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="theme-mobile-app-section">
+                        <div class="theme-mobile-app-body">
+                          <div class="theme-mobile-app-header">
+                            <h2 class="theme-mobile-app-title">Download our app</h2>
+                            <p class="theme-mobile-app-subtitle">Book and manage your trips on the go. Be notified of our hot deals and offers.</p>
+                          </div>
+                          <ul class="theme-mobile-app-btn-list">
+                            <li>
+                              <a class="btn btn-dark theme-mobile-app-btn" href="#">
+                                <i class="theme-mobile-app-logo">
+                                  <img src="img/brands/apple.png" alt="Image Alternative text" title="Image Title"/>
+                                </i>
+                                <span>Download on
+                                  <br/>
+                                  <span>App Store</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="btn btn-dark theme-mobile-app-btn" href="#">
+                                <i class="theme-mobile-app-logo">
+                                  <img src="img/brands/play-market.png" alt="Image Alternative text" title="Image Title"/>
+                                </i>
+                                <span>Download on
+                                  <br/>
+                                  <span>Play Market</span>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-footer" id="mainFooter">
+      <div class="container _ph-mob-0">
+        <div class="row row-eq-height row-mob-full" data-gutter="60">
+          <div class="col-md-3">
+            <div class="theme-footer-section theme-footer-">
+              <a class="theme-footer-brand _mb-mob-30" href="#">
+                <img src="img/logo-black.png" alt="Image Alternative text" title="Image Title"/>
+              </a>
+              <div class="theme-footer-brand-text">
+                <p>Dui eros et auctor pretium est maecenas fusce praesent porta lectus varius eu pellentesque lobortis</p>
+                <p>Odio accumsan aenean libero netus luctus quam sapien imperdiet orci adipiscing feugiat a vestibulum placerat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="theme-footer-section theme-footer-">
+                  <h5 class="theme-footer-section-title">Travel Mate</h5>
+                  <ul class="theme-footer-section-list">
+                    <li>
+                      <a href="#">About Travel Mate</a>
+                    </li>
+                    <li>
+                      <a href="#">Mobile App</a>
+                    </li>
+                    <li>
+                      <a href="#">Customer Support</a>
+                    </li>
+                    <li>
+                      <a href="#">Advertising</a>
+                    </li>
+                    <li>
+                      <a href="#">Jobs</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms of Use</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="theme-footer-section theme-footer-">
+                  <h5 class="theme-footer-section-title">Explore</h5>
+                  <ul class="theme-footer-section-list">
+                    <li>
+                      <a href="#">Countries</a>
+                    </li>
+                    <li>
+                      <a href="#">Regions</a>
+                    </li>
+                    <li>
+                      <a href="#">Cities</a>
+                    </li>
+                    <li>
+                      <a href="#">Districs</a>
+                    </li>
+                    <li>
+                      <a href="#">Airports</a>
+                    </li>
+                    <li>
+                      <a href="#">Hotels</a>
+                    </li>
+                    <li>
+                      <a href="#">Places of Interest</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="theme-footer-section theme-footer-">
+                  <h5 class="theme-footer-section-title">Book</h5>
+                  <ul class="theme-footer-section-list">
+                    <li>
+                      <a href="#">Apartments</a>
+                    </li>
+                    <li>
+                      <a href="#">Resorts</a>
+                    </li>
+                    <li>
+                      <a href="#">Villas</a>
+                    </li>
+                    <li>
+                      <a href="#">Hostels</a>
+                    </li>
+                    <li>
+                      <a href="#">B&Bs</a>
+                    </li>
+                    <li>
+                      <a href="#">Guesthouses</a>
+                    </li>
+                    <li>
+                      <a href="#">Hotel Chains</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="theme-footer-section theme-footer-section-subscribe bg-grad _mt-mob-30">
+              <div class="theme-footer-section-subscribe-bg" style="background-image:url(img/footer/footer_subscribe_bg.png);"></div>
+              <div class="theme-footer-section-subscribe-content">
+                <h5 class="theme-footer-section-title">Save up to 50% off your next trip</h5>
+                <p class="text-muted">Subscribe to unlock our secret deals</p>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control theme-footer-subscribe-form-control" type="email" placeholder="Type your e-mail here"/>
+                  </div>
+                  <button class="btn btn-primary-invert btn-shadow text-upcase theme-footer-subscribe-btn" type="submit">Get deals</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="theme-copyright-text">Copyright &copy; 2018
+              <a href="#">Bookify</a>. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="theme-copyright-social">
+              <li>
+                <a class="fa fa-facebook" href="#"></a>
+              </li>
+              <li>
+                <a class="fa fa-google" href="#"></a>
+              </li>
+              <li>
+                <a class="fa fa-twitter" href="#"></a>
+              </li>
+              <li>
+                <a class="fa fa-youtube-play" href="#"></a>
+              </li>
+              <li>
+                <a class="fa fa-instagram" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYeBBmgAkyAN_QKjAVOiP_kWZ_eQdadeI&callback=initMap&libraries=places"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/blur-area.js"></script>
+    <script src="js/icheck.js"></script>
+    <script src="js/gmap.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/ion-range-slider.js"></script>
+    <script src="js/sticky-kit.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/bs-datepicker.js"></script>
+    <script src="js/typeahead.js"></script>
+    <script src="js/quantity-selector.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/window-scroll-action.js"></script>
+    <script src="js/fitvid.js"></script>
+    <script src="js/youtube-bg.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
